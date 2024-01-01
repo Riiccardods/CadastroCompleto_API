@@ -36,7 +36,7 @@ namespace CadastroCompleto_API.Controllers
         }
         #endregion
 
-        // Método GET para obter um único usuário por ID
+        #region// Método GET para obter um único usuário por ID
         // Parâmetro "id" é especificado na rota
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
@@ -53,6 +53,7 @@ namespace CadastroCompleto_API.Controllers
             // Retorna o usuário encontrado
             return usuario;
         }
+        #endregion
 
         // Método POST para criar um novo usuário
         [HttpPost]
