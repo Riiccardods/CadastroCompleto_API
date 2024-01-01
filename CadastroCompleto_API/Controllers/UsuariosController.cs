@@ -19,13 +19,14 @@ namespace CadastroCompleto_API.Controllers
         // Contexto do Entity Framework Core para acesso ao banco de dados
         private readonly CadastroContext _context;
 
-        // Construtor que injeta a dependência do contexto do banco de dados
+        #region  // Construtor que injeta a dependência do contexto do banco de dados
         public UsuariosController(CadastroContext context)
         {
             _context = context;
         }
+        #endregion
 
-        // Método GET para listar todos os usuários
+        #region// Método GET para listar todos os usuários
         // Task<ActionResult<IEnumerable<Usuario>>> permite uma operação assíncrona que retorna uma ação de resultado com uma lista de usuários
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
@@ -33,6 +34,7 @@ namespace CadastroCompleto_API.Controllers
             // Retorna a lista de usuários do banco de dados de forma assíncrona
             return await _context.Usuarios.ToListAsync();
         }
+        #endregion
 
         // Método GET para obter um único usuário por ID
         // Parâmetro "id" é especificado na rota
