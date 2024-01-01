@@ -69,7 +69,7 @@ namespace CadastroCompleto_API.Controllers
         }
         #endregion
 
-        // Método PUT para atualizar um usuário existente
+        #region// Método PUT para atualizar um usuário existente
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
@@ -99,6 +99,7 @@ namespace CadastroCompleto_API.Controllers
                     throw; // Lança a exceção capturada
                 }
             }
+            #endregion
 
             // Se a atualização for bem-sucedida, retorna um status 204 No Content
             return NoContent();
