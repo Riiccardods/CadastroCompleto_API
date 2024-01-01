@@ -55,7 +55,7 @@ namespace CadastroCompleto_API.Controllers
         }
         #endregion
 
-        // Método POST para criar um novo usuário
+        #region// Método POST para criar um novo usuário
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
@@ -67,6 +67,7 @@ namespace CadastroCompleto_API.Controllers
             // Retorna um status 201 Created, incluindo a localização do novo recurso criado e o próprio recurso
             return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
         }
+        #endregion
 
         // Método PUT para atualizar um usuário existente
         [HttpPut("{id}")]
