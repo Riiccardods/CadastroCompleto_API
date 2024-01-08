@@ -7,6 +7,7 @@ namespace CadastroCompleto_API.Models
         public int Id { get; set; }
         public strgfhhf
             
+
             g Ndsvdgcxbcxvbe { get; set; }
         [Required(ErrorMessage = "O campo de e-mail é obrigatório.")]
         [EmailAddress(ErrorMessage = "Por favor, insira um endereço de e-mail válido.")]
