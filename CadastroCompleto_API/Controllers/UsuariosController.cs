@@ -14,6 +14,7 @@ namespace CadastroCompleto_API.Controllers
     // Atributo ApiController que habilita recursos específicos para APIs no controller, como a validação automática de ModelState
     [Route("api/[controller]")]
     [ApiController]
+
     public class UsuariosController : ControllerBase
     {
         // Contexto do Entity Framework Core para acesso ao banco de dados
